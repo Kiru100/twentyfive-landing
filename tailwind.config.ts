@@ -54,11 +54,24 @@ export default {
   				'5': 'hsl(var(--chart-5))'
   			}
   		},
-		darkMode: "class",
+  		darkMode: 'class',
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
+  		},
+  		animation: {
+  			grid: 'grid 15s linear infinite'
+  		},
+  		keyframes: {
+  			grid: {
+  				'0%': {
+  					transform: 'translateY(-50%)'
+  				},
+  				'100%': {
+  					transform: 'translateY(0)'
+  				}
+  			}
   		}
   	}
   },
