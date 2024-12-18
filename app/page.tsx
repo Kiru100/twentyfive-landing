@@ -1,26 +1,9 @@
 import ParticleBG from "@/components/ParticleBG";
-import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
-import { FlipWords } from "@/components/ui/flip-words";
 import Image from "next/image";
-import page_logo from "@/public/twentyfive.jpg";
 
 export default function Home() {
 
-	const darkNewYearTheme = {
-		gradientBackgroundStart: "#0B0C10", // Deep blackish blue
-		gradientBackgroundEnd: "#1F2833", // Slightly lighter bluish black
-		firstColor: "128, 0, 128", // Deep purple for a neon glow effect
-		secondColor: "255, 87, 34", // Dark orange-red for energy
-		thirdColor: "0, 150, 136", // Teal for a cool balance
-		fourthColor: "33, 150, 243", // Bright blue for vibrancy
-		fifthColor: "211, 47, 47", // Deep red for warmth
-		pointerColor: "255, 255, 255", // White for high contrast pointer
-		size: "90%",
-		blendingValue: "soft-light", // Softer glow for blending
-		interactive: false,
-		containerClassName: "dark-new-year-container",
-	};
-  
+
 	return (
 		<div className="h-screen w-screen p-6">
 			<div className="container mx-auto flex justify-center">
