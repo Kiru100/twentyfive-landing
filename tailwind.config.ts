@@ -12,6 +12,13 @@ export default {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			inter: ["var(--font_inter)"],
+			roboto: ["var(--font_roboto)"],
+		},
+		gridAutoColumns: {
+			'min-100-auto': 'minmax(100px, auto)',
+		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
