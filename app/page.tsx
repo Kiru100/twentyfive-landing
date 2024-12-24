@@ -30,41 +30,36 @@ export default function Home() {
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 					<div className="flex flex-col justify-center">
 						<h1 className="text-5xl md:text-7xl font-bold mb-6 relative text-left text-zinc-100 max-w-4xl font-roboto-bold">$2025</h1>
-						<p className="relative text-sm sm:text-xl text-zinc-300 tracking-wide text-left max-w-2xl antialiased leading-loose font-inter-medium pb-4">
+						<p className="relative text-sm sm:text-xl text-zinc-300 tracking-wide text-left max-w-2xl antialiased leading-loose font-inter-medium mb-6">
 							Celebrate, meme, and moon your way into 2025 with New Years token.  
 							A coin built for laughs, gains, and an all-year party vibe. 🎉✨
 						</p>
 						<div className="flex flex-row gap-2 rounded-[8px] bg-slate-700 self-start overflow-hidden font-inter-medium items-center text-wrap">
-							<p className="text-zinc-300 w-full break-all p-2">CA: E8F3PaD1StLs1HYqWeutGji15DhNTJ6yp2LGWVNNFiuH</p>
+							<p className="text-zinc-300 w-full break-all p-2 text-sm sm:text-lg">CA: E8F3PaD1StLs1HYqWeutGji15DhNTJ6yp2LGWVNNFiuH</p>
 							<button 
 								className="bg-slate-800 h-full p-2 hover:text-zinc-100 hover:bg-slate-900 transition-all duration-300 ease-in-out active:bg-slate-950"
 								onClick={copyToClipboard}
 							>
-									<LuClipboardCopy size="24" className="text-zinc-300" />
+								<LuClipboardCopy size="24" className="text-zinc-300" />
 							</button>
 						</div>
 					</div>	
-					<div>
-								 
-					<BackgroundGradient animate={true} className="overflow-hidden rounded-[22px] relative h-auto" containerClassName="">
-						<Image 
-							layout="responsive"
-							sizes="100vw"
-							style={{
-								objectFit: "cover",
-							  }}
+				<div>							 
+					<BackgroundGradient 
+						animate={true} 
+						className="overflow-hidden rounded-[22px] relative h-full" 
+						containerClassName="h-full"
+					>
+						<Image 					
+							className="h-full w-full object-cover"
+							
 							 src={LeonardoGIF} alt="Moving picture of Leonardo DiCaprio" 
-						/>
-					
-						
+						/>										
 					</BackgroundGradient>	
-					</div>						
-				</div>
+				</div>						
 			</div>
-		
-		{/* <FlipWords  words={["Happy", "New", "Year", "2025"]} duration={2000} className="text-5xl text-white z-10" /> */}
-		
-		<ParticleBG />
+			</div>	
+			<ParticleBG />
 		</div>
 	);
 }
