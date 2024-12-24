@@ -5,6 +5,10 @@ import Image from "next/image";
 import LeonardoGIF from "@/public/leonardo.webp";
 import BackgroundGradient from "@/components/ui/background-gradient";
 import { LuClipboardCopy } from "react-icons/lu";
+import Link from "next/link";
+import XSVG from "@/components/svg/XSVG";
+import TelegramSVG from "@/components/svg/TelegramSVG";
+import { FeaturesSectionDemo } from "@/components/ui/bento-grid";
 
 export default function Home() {
 
@@ -14,9 +18,10 @@ export default function Home() {
 	};
 
 	return (
-		<div className="h-screen p-8 flex flex-col">
+		<>	
+			<div className="h-screen p-8 flex flex-col">
 			<div className="container mx-auto flex justify-center">
-				<div>
+				<Link href="/" className="flex flex-row items-center gap-2">
 					<Image
 						className="rounded-full self-center"
 						width={100}
@@ -24,7 +29,7 @@ export default function Home() {
 						src={`https://dd.dexscreener.com/ds-data/tokens/solana/E8F3PaD1StLs1HYqWeutGji15DhNTJ6yp2LGWVNNFiuH.png?size=xl&key=2c39fb`}
 						alt="Twenty Twenty Five"
 					/>	
-				</div>
+				</Link>
 			</div>
 			<div className="container mx-auto flex-1 pt-10 md:pt-20">
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -34,7 +39,7 @@ export default function Home() {
 							Celebrate, meme, and moon your way into 2025 with New Years token.  
 							A coin built for laughs, gains, and an all-year party vibe. 🎉✨
 						</p>
-						<div className="flex flex-row gap-2 rounded-[8px] bg-slate-700 self-start overflow-hidden font-inter-medium items-center text-wrap">
+						<div className="flex flex-row gap-2 rounded-[8px] bg-slate-700 self-start overflow-hidden font-inter-medium items-center text-wrap mb-6">
 							<p className="text-zinc-300 w-full break-all p-2 text-sm sm:text-lg">CA: E8F3PaD1StLs1HYqWeutGji15DhNTJ6yp2LGWVNNFiuH</p>
 							<button 
 								className="bg-slate-800 h-full p-2 hover:text-zinc-100 hover:bg-slate-900 transition-all duration-300 ease-in-out active:bg-slate-950"
@@ -42,6 +47,23 @@ export default function Home() {
 							>
 								<LuClipboardCopy size="24" className="text-zinc-300" />
 							</button>
+						</div>
+						<div className="flex flex-row gap-x-4">
+							<Link 
+								href="https://x.com/2025_newyears" 
+								target="_blank" 
+								className="bg-slate-500 p-2 flex rounded-full h-12 w-12 items-center justify-center"
+							>	
+								<XSVG height="28px" width="28px"/> 
+							</Link>
+
+							<Link 
+								href="https://t.me/newyearsssd" 
+								target="_blank" 
+								className="bg-slate-500 p-2 flex rounded-full  h-12 w-12
+								">	
+								<TelegramSVG height="32px" width="32px"/> 
+							</Link>
 						</div>
 					</div>	
 				<div>							 
@@ -52,7 +74,6 @@ export default function Home() {
 					>
 						<Image 					
 							className="h-full w-full object-cover"
-							
 							 src={LeonardoGIF} alt="Moving picture of Leonardo DiCaprio" 
 						/>										
 					</BackgroundGradient>	
@@ -60,6 +81,10 @@ export default function Home() {
 			</div>
 			</div>	
 			<ParticleBG />
-		</div>
+			</div>
+			<div className="bg-gray-200">
+				<FeaturesSectionDemo />
+			</div>
+		</>
 	);
 }

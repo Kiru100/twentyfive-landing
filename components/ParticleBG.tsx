@@ -228,7 +228,7 @@ const ParticleBG = () => {
     );
   }
 
-  return <></>;
+  return <div className="bg-black"></div>;
 };
 
 export default ParticleBG;
