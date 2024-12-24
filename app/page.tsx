@@ -1,5 +1,4 @@
 "use client";
-
 import ParticleBG from "@/components/ParticleBG";
 import TelegramSVG from "@/components/svg/TelegramSVG";
 import XSVG from "@/components/svg/XSVG";
@@ -14,9 +13,7 @@ import { LuClipboardCopy } from "react-icons/lu";
 import PhotonImage from "@/public/Photon.jpg";
 
 export default function Home() {
-
 	useEffect(() => {
-		// Add the 'dark' class to the <html> tag by default
 		document.documentElement.classList.add("dark");
 	  }, []);
 
