@@ -5,7 +5,8 @@ import Hero from "@/components/Hero";
 import TokenLogo from "@/components/TokenLogo";
 import { FeaturesSection } from "@/components/FeaturesSection";
 import { useEffect } from "react";
-import TokeDetails from "@/components/Tokenomics";
+import TokeDetails from "@/components/TokenDetails";
+import Footer from "@/components/Footer";
 
 export default function Home() {
 
@@ -15,7 +16,7 @@ export default function Home() {
 
 	return (
 		<>	
-			<div className="h-screen p-8 flex flex-col overflow-hidden">
+			<div className="h-screen p-8 flex flex-col overflow-hidden max-w-7xl mx-auto">
 				<TokenLogo />
 				<Hero/>
 				<ParticleBG />
@@ -26,8 +27,11 @@ export default function Home() {
 			<div className="bg-neutral-950">
 				<FeaturesSection />
 			</div>
-			<div className="bg-neutral-900">
+			<div className="bg-neutral-900 overflow-hidden">
 				<TokeDetails />
+			</div>
+			<div className="bg-neutral-950">
+				<Footer />
 			</div>
 		</>
 	);
