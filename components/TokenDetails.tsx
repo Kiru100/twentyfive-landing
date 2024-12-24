@@ -1,10 +1,10 @@
 import React from 'react'
 import { AnimatedTestimonials } from './ui/animated-testimonials';
 
-function TokeDetails() {
+function TokenDetails() {
     const testimonials = [
         {
-            quote: "Built on the lightning-fast Solana network, our token is ready to sprint into the New Year—no traffic jams, just smooth transactions to match your 2025 goals!",
+            quote: "On Solana's lightning-fast network, our token races into the New Year with smooth, traffic-free transactions!",
             name: "Token Network",
             src: "https://cdn.discordapp.com/attachments/1321143163074646016/1321157173031600148/Learn-More-About-SOL_Coins-Academy.png?ex=676c36ff&is=676ae57f&hm=c018e617e88333546ff9d4c2c8b3e013e6dc2ffec51cd5b3d9cd49269e32ea4f&",
         },
@@ -16,12 +16,12 @@ function TokeDetails() {
         },
         {
             quote:
-                "Circulating and total supply both stand at 999.77M—no hidden stashes, just all the coins out there ready to make their move.",
+                "Circulating and total supply both stand at 999.77M — no hidden stashes, just all the coins out there ready to make their move.",
             name: "Total Market Supply",
             src: "https://cdn.discordapp.com/attachments/1321143163074646016/1321156136015102092/Screenshot_2024-12-25_004235.png?ex=676c3608&is=676ae488&hm=28ed64730c6349ce2ae4b2ecd7f1f7d60aefdcab13ad5fcddf60822c8e7cf461&",
         },
         {
-            quote: "Pool created on 12/10/2024 at 00:11—a perfect start for a token that's ready to make waves!",
+            quote: "Pool created on December 09, 2024 — a perfect start for a token that's ready to make waves!",
             name: "Pool Creation",
             src: "https://cdn.discordapp.com/attachments/1321143163074646016/1321158048521388094/depositphotos_12456636-stock-illustration-calendar.jpg?ex=676c37d0&is=676ae650&hm=80a6a663ba0978b2280db06a27eb30e546bb651d73dc04e3e5247f40798a829d&",
         },
@@ -37,4 +37,4 @@ function TokeDetails() {
     )
 }
 
-export default TokeDetails;
+export default TokenDetails;
