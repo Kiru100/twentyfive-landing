@@ -37,7 +37,7 @@ const NewYearCountdown: React.FC = () => {
 
   return (
     <div className="flex justify-center flex-col items-center">
-      <h1 className="text-lg md:text-2xl text-slate-300 font-inter-medium">New Year Coundown🎉</h1>
+      <h1 className="text-lg md:text-2xl text-slate-300 font-inter-medium">New Year&apos;s Countdown🎉</h1>
       <p className="text-lg md:text-2xl text-slate-300 font-inter-medium">
         {timeLeft.days} days, {timeLeft.hours} hours, {timeLeft.minutes} minutes, {timeLeft.seconds} seconds
       </p>
