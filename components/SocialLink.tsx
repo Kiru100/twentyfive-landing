@@ -32,7 +32,7 @@ function SocialLink() {
             <Link 
                 href="https://photon-sol.tinyastro.io/en/lp/2bb8AHNhNnzGYq7XAZ9weSAcQShEKYEoJZqBCW5SmTLz" 
                 target="_blank" 
-                className="bg-neutral-950 p-2 flex rounded-full  h-12 w-12 border"
+                className="bg-[#0E111A] p-2 flex rounded-full  h-12 w-12 border"
             >	
                 <Image src={PhotonImage} alt="Photon Logo"  width={40} height={40}/> 
             </Link>
