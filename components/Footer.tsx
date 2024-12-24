@@ -19,7 +19,7 @@ export default function Footer() {
                         />	
                     </Link>  
                     <h3 className="text-start max-w-5xl tracking-tight text-black dark:text-white font-inter-medium text-lg md:leading-snug">
-                        New{<FlipWords words={["Year", "Me"]} />}
+                        New{<FlipWords words={["Year", "Me"]} className="pr-0"/>}
                     </h3>             
                 </div>
                 <div className="flex justify-center md:justify-end">
