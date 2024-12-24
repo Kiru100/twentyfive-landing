@@ -18,6 +18,18 @@ const nextConfig: NextConfig = {
     {
       protocol: 'https',
       hostname: 'ui.aceternity.com'
+    },
+    {
+      protocol: 'https',
+      hostname: 'www.dextools.io'
+    },
+    {
+      protocol: 'https',
+      hostname: 'dexscreener.com'
+    },
+    {
+      protocol: 'https',
+      hostname: 'photon-sol.tinyastro.io'
     }
   ]  
 
