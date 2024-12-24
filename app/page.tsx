@@ -1,9 +1,10 @@
 "use client";
 import ParticleBG from "@/components/ParticleBG";
-import { FeaturesSectionDemo } from "@/components/ui/bento-grid";
 import NewYearCountdown from "@/components/ui/new-year-countdown";
 import Hero from "@/components/Hero";
 import TokenLogo from "@/components/TokenLogo";
+import Tokenomics from "@/components/Tokenomics";
+import { FeaturesSection } from "@/components/FeaturesSection";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -23,7 +24,10 @@ export default function Home() {
 				<NewYearCountdown/>
 			</div>
 			<div className="bg-neutral-950">
-				<FeaturesSectionDemo />
+				<FeaturesSection />
+			</div>
+			<div className="bg-neutral-950">
+				<Tokenomics />
 			</div>
 		</>
 	);
