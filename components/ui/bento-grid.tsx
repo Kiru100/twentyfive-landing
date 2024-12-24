@@ -5,7 +5,7 @@ import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { IconBrandYoutubeFilled } from "@tabler/icons-react";
-import NewYearImage from "@/public/newyear.png";
+import NewYearImage from "@/public/ytimage.jpg";
 import Link from "next/link";
 import TrendingImage1 from "@/public/spotlight/spotlight1.jpg";
 import TrendingImage2 from "@/public/spotlight/spotlight2.jpg";

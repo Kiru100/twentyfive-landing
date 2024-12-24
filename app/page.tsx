@@ -47,7 +47,7 @@ export default function Home() {
 								A coin built for laughs, gains, and an all-year party vibe. 🎉✨
 							</p>
 							<div className="flex flex-row gap-2 rounded-[8px] bg-slate-700 self-start overflow-hidden font-inter-normal items-center text-wrap mb-6">
-								<p className="text-zinc-300 w-full break-all p-2 text-sm sm:text-lg">CA: E8F3PaD1StLs1HYqWeutGji15DhNTJ6yp2LGWVNNFiuH</p>
+								<p className="text-zinc-300 w-full break-all p-2 text-sm">CA: E8F3PaD1StLs1HYqWeutGji15DhNTJ6yp2LGWVNNFiuH</p>
 								<button 
 									className="bg-slate-800 h-full p-2 hover:text-zinc-100 hover:bg-slate-900 transition-all duration-300 ease-in-out active:bg-slate-950"
 									onClick={copyToClipboard}
