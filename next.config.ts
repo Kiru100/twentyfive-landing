@@ -42,6 +42,10 @@ const nextConfig: NextConfig = {
 		{
 			protocol: 'https',
 			hostname: 's3-ap-southeast-1.amazonaws.com'
+		},
+		{
+			protocol: 'https',
+			hostname: 'media.discordapp.net'
 		}
 	]},
 };
