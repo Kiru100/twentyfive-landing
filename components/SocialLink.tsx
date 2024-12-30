@@ -37,7 +37,7 @@ function SocialLink() {
                 <Image src={PhotonImage} alt="Photon Logo"  width={40} height={40}/> 
             </Link>
             <Link 
-                href="https://www.dextools.io/token/2025newyears?t=1735043028113" 
+                href="https://dexscreener.com/solana/E8F3PaD1StLs1HYqWeutGji15DhNTJ6yp2LGWVNNFiuH" 
                 target="_blank" 
                 className="bg-neutral-950 p-2 flex rounded-full  h-12 w-12 border border-neutral-300">	
                 <Image src={"https://dexscreener.com/favicon.png"} alt="Dex Tools Logo"  width={30} height={30}/> 
