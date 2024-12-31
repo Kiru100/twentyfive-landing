@@ -16,7 +16,7 @@ function SocialLink() {
                 <XSVG height="28px" width="28px"/> 
             </Link>
             <Link 
-                href="https://t.me/newyearsssd" 
+                href="https://t.me/+B7PF7CT940hlY2E0" 
                 target="_blank" 
                 className="bg-neutral-300 p-2 flex rounded-full  h-12 w-12"
             >	
