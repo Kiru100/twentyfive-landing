@@ -1,9 +1,6 @@
 import Link from 'next/link';
-import React from 'react';
-import XSVG from './svg/XSVG';
 import TelegramSVG from './svg/TelegramSVG';
-import Image from 'next/image';
-import PhotonImage from "@/public/Photon.jpg";
+import XSVG from './svg/XSVG';
 
 function SocialLink() {
     return (
@@ -21,27 +18,7 @@ function SocialLink() {
                 className="bg-neutral-300 p-2 flex rounded-full  h-12 w-12"
             >	
                 <TelegramSVG height="32px" width="32px"/> 
-            </Link>
-            <Link 
-                href="https://www.dextools.io/token/2025newyears?t=1735043028113" 
-                target="_blank" 
-                className="bg-neutral-300 p-2 flex rounded-full  h-12 w-12"
-            >	
-                <Image src={"https://www.dextools.io/app/assets/img/logo/dext-large-preview.png"} alt="Dex Tools Logo"  width={32} height={32}/> 
-            </Link>
-            <Link 
-                href="https://photon-sol.tinyastro.io/en/lp/2bb8AHNhNnzGYq7XAZ9weSAcQShEKYEoJZqBCW5SmTLz" 
-                target="_blank" 
-                className="bg-[#0E111A] p-2 flex rounded-full  h-12 w-12 border"
-            >	
-                <Image src={PhotonImage} alt="Photon Logo"  width={40} height={40}/> 
-            </Link>
-            <Link 
-                href="https://dexscreener.com/solana/E8F3PaD1StLs1HYqWeutGji15DhNTJ6yp2LGWVNNFiuH" 
-                target="_blank" 
-                className="bg-neutral-950 p-2 flex rounded-full  h-12 w-12 border border-neutral-300">	
-                <Image src={"https://dexscreener.com/favicon.png"} alt="Dex Tools Logo"  width={30} height={30}/> 
-            </Link>						
+            </Link>					
         </div>
     )
 }
