@@ -6,13 +6,15 @@ const NewYearCountdown: React.FC = () => {
 		const now = new Date();
 		const nextYear = new Date(now.getFullYear() + 1, 0, 1, 0, 0, 0);
 		const difference = nextYear.getTime() - now.getTime();
+		const currentYear = now.getFullYear();
 
 		let timeLeft = {
 			days: 0,
 			hours: 0,
 			minutes: 0,
 			seconds: 0,
-			difference
+			difference,
+			currentYear
 		};
 
 		if (difference > 0) {
@@ -21,7 +23,8 @@ const NewYearCountdown: React.FC = () => {
 				hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
 				minutes: Math.floor((difference / 1000 / 60) % 60),
 				seconds: Math.floor((difference / 1000) % 60),
-				difference
+				difference,
+				currentYear
 			};
 		}
 
@@ -41,10 +44,11 @@ const NewYearCountdown: React.FC = () => {
 	return (
 		<div className="flex justify-center flex-col items-center">
 			<>
-				{(timeLeft?.difference) ? (
+				{(timeLeft?.difference && timeLeft.currentYear === 2024) ? (
 					<>
 						<h3 className="text-lg md:text-2xl text-slate-300 font-inter-medium">New Year&apos;s Countdown🎉</h3>
 						<p className="text-lg md:text-2xl text-slate-300 font-inter-medium">
+							<p>{timeLeft.currentYear}</p>
 							{timeLeft.days} days, {timeLeft.hours} hours, {timeLeft.minutes} minutes, {timeLeft.seconds} seconds
 						</p>
 					</>		
